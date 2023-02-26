@@ -14,6 +14,7 @@ header {
     z-index: 1;
 }
 
+
 .header_logo {
     height: 30px;
     
@@ -52,6 +53,15 @@ select {
     appearance: none;
 }
 
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .about__image {
     width: 500px;
 }
@@ -72,19 +82,10 @@ select {
     align-items: center;
     padding-top: 115px;
     padding-bottom: 115px;
-    background: url(img/back.png) no-repeat;
+    background: url("img/back.png") no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
     }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 .about h1 {
     font-size: 70px;
@@ -108,10 +109,9 @@ select {
     max-width: 550px;
 }
 
-
 .features {
-    background-color: white;
-    padding-top: 115px 60px;
+    background-color: #fff;
+    padding: 115px 60px;
 }
 
 .cards {
@@ -289,11 +289,11 @@ select {
     align-items: center;
 }
 
-.form h1{
+.form h1 {
     font-size: 48px;
 }
 
-.form p{
+.form p {
     font-size: 18px;
     opacity: 0.65;
 }
@@ -386,115 +386,114 @@ a {
 /* Мобильные устройства */
 @media (max-width: 720px) {
 header {
-        padding: 10px;
+    padding: 10px;
     }
 
 .header__logo {
-        height: 20px;
+    height: 20px;
     }
 
 header a {
-        margin-right: 10px;
+    margin-right: 10px;
     }
 
 .about {
-        flex-direction: column-reverse;
-        padding: 50px 10px;
+    flex-direction: column-reverse;
+    padding: 50px 10px;
     }
 
 .about h1 {
-        font-size: 36px;
-        line-height: 40px;
+    font-size: 36px;
+    line-height: 40px;
     }
 
 .about__image {
-        width: 280px;
+    width: 280px;
     }
 
 .about__sun-image {
-        width: 75px;
-        height: 75px;
+    width: 75px;
+    height: 75px;
     }
 .features {
-        padding: 50px 10px;
+    padding: 50px 10px;
     }
 
 .cards {
-        grid-template-columns: auto;
-        }
+    grid-template-columns: auto;
+    }
     
 .features__feedback { 
-        display: flex;
-        }
+    flex-direction: column;
+    }
 
 .features__feedback-left {
-        margin-right: 0px;
-        }
+    margin-right: 0px;
+    }
 
-.features__feedback-left h2,
-.features__box h3 {
-        font-size: 36px;
-        }
+.features__feedback-left h2, .features__box h3 {
+    font-size: 36px;
+    }
 
 .features__feedback-right {
-        flex-direction: column;
-        align-items: initial;
-        }
+    flex-direction: column;
+    align-items: initial;
+    }
     
 .features__savings-box {
-        margin-right: 0;
-        margin-bottom: 30px;
-        }
+    margin-right: 0;
+    margin-bottom: 30px;
+    }
 
 .promo {
-            flex-direction: column-reverse;
-        }
+    flex-direction: column-reverse;
+    }
         
 .promo__right {
-            padding: 50px 10px;
-        }
+    padding: 50px 10px;
+    }
         
 .promo__image {
-            width: 100%;
-            height: 500px;
-        }
+    width: 100%;
+    height: 500px;
+    }
     
 .form {
-            padding: 50px 10px;
-        }
+    padding: 50px 10px;
+    }
     
 .form h1 {
-            font-size: 36px;
-        }
+    font-size: 36px;
+    }
     
 footer {
-            padding: 50px 10px;
-        }
+    padding: 50px 10px;
+    }
     
 .footer__container {
-            flex-direction: column;
-        }
+    flex-direction: column;
+    }
 
 }
 
 
 /* Планшеты */
 @media (max-width: 1024px) {
-    .about {
-        padding: 115px 20px;
+.about {
+    padding: 115px 20px;
     }
 
-    .about h1 {
-        font-size: 36px;
-        line-height: 40px;
+.about h1 {
+    font-size: 36px;
+    line-height: 40px;
     }
 
-    .about__image {
-        width: 280px;
+.about__image {
+    width: 280px;
     }
 
-    .about__sun-image {
-        width: 75px;
-        height: 75px;
+.about__sun-image {
+    width: 75px;
+    height: 75px;
     }
 }
