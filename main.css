@@ -44,6 +44,13 @@ button {
     transition: background 0.3s ease-in;
 }
 
+.orb-canvas {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
 button:hover {
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
@@ -77,6 +84,7 @@ select {
 }
 
 .about {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
